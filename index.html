@@ -3,9 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i&display=swap" rel="stylesheet">
 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
         
         <title>snacked | baking's best subscription box</title>
@@ -142,7 +143,77 @@
             </section>
 
             <section class="section-menu">
-                menu
+                <div class="section__title">
+                    <h2 class="section__title--h2">this month's menu</h2>
+                </div>
+                <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                      <li data-target="#carouselIndicators" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner menu">
+
+                      <div class="carousel-item active">
+                          <div class="menu__item">
+                            <div class="menu__item--img" style="background-image: url(img/menu-1.jpg)" ></div>
+                            <div class="menu__item--details">
+                                <h3 class="section__h3 menu__item--title">homemade donuts</h3>
+                                <p class="menu__item--desc">simple yeast donuts with a variety of candy toppings, including fruity pebbles cereal, crushed oreos, and chocolate glaze with sprinkles</p>
+                                <p class="menu__item--text">diet: none</p>
+                                <p class="menu__item--text">servings: 6 donuts</p>
+                            </div>
+                          </div>
+                      </div>
+                      
+                      <div class="carousel-item">
+                          <div class="menu__item">
+                            <div class="menu__item--img" style="background-image: url(img/menu-4.jpg)" ></div>
+                            <div class="menu__item--details">
+                                <h3 class="section__h3 menu__item--title">strawberry cake</h3>
+                                <p class="menu__item--desc">strawberry cake with strawberry and cream cheese layers, graham cracker crust, and topped with berries</p class="menu__item--desc">
+                                <p class="menu__item--text">diet: none</p class="menu__item--text">
+                                <p class="menu__item--text">servings: 8 slices</p class="menu__item--text">
+                            </div>
+                          </div>
+                        
+                      </div>
+
+                      <div class="carousel-item">
+                          <div class="menu__item">
+                            <div class="menu__item--img" style="background-image: url(img/menu-3.jpg)" ></div>
+                            <div class="menu__item--details">
+                                <h3 class="section__h3 menu__item--title">funfetti cookies</h3>
+                                <p class="menu__item--desc">gluten free vanilla funfetti cookies with rainbow pebble sprinkles</p>
+                                <p class="menu__item--text">diet: gluten free</p>
+                                <p class="menu__item--text">servings: 24 cookies</p>
+                            </div>
+                          </div>
+                      </div>
+                      
+                      <div class="carousel-item">
+                          <div class="menu__item">
+                            <div class="menu__item--img" style="background-image: url(img/menu-2.jpg)" ></div>
+                            <div class="menu__item--details">
+                                <h3 class="section__h3 menu__item--title">blueberry cheesecake</h3>
+                                <p class="menu__item--desc">new york style classic cheesecake topped with blueberry glaze and fresh blueberries</p>
+                                <p class="menu__item--text">diet: none</p>
+                                <p class="menu__item--text">servings: 8 slices</p>
+                            </div>
+                          </div>
+                      </div>
+
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
             </section>
 
             <section class="section-pricing">
@@ -154,5 +225,29 @@
         <footer>
             footer
         </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>
+
+<!-- <div class="menu">
+    <div class="menu__btn menu__btn--1">
+        &larr;
+    </div>
+    <div class="menu__item">
+        <figure class="menu__item--figure">
+            <img src="img/menu-1.jpg" alt="friends holding donuts" class="menu__item--img">
+        </figure>
+        <div class="menu__item--details">
+            <h3 class="section__h3">homemade donuts</h3>
+            <p>simple yeast donuts with a variety of candy toppings</p>
+            <p>diet: none</p>
+            <p>servings: 6 donuts</p>
+        </div>
+    </div>
+    <div class="menu__btn menu__btn--2">
+        &rarr;
+    </div>
+</div> -->
