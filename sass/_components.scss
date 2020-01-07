@@ -1,5 +1,5 @@
 .nav {
-    color: #fff;
+    color: $color-white;
     display: flex;
     align-items: center;
     padding: 0 4rem;
@@ -25,14 +25,14 @@
 
         &--link:link,
         &--link:visited {
-            color: #fff;
+            color: $color-white;
             text-decoration: none;
         }
 
         &--link:hover,
         &--link:active {
-            color: #43AA8B;
-            border-bottom: 2px solid #43AA8B;
+            color: $color-green;
+            border-bottom: 2px solid $color-green;
             padding-bottom: 5px;
         }
     }
@@ -64,7 +64,7 @@
 }
 
 .header {
-    color: #fff;
+    color: $color-white;
     position: relative;
 
     &__text {
@@ -78,7 +78,7 @@
         &--main {
             font-size: 5rem;
             letter-spacing: .5rem;
-            background-image: linear-gradient(rgba(43,109,89,.6), rgba(43,109,89,.6));
+            background-image: linear-gradient(rgba($color-green,.6), rgba($color-green,.6));
             margin: 0 2rem;
             z-index: 10;
             position: relative;
@@ -89,7 +89,7 @@
 
         &--sub {
             font-size: 3rem;
-            background-image: linear-gradient(rgba(43,109,89,.4), rgba(43,109,89,.4));
+            background-image: linear-gradient(rgba($color-green,.4), rgba($color-green,.4));
             padding: 2rem;
             transform: translateY(-2rem);
             z-index: 1;
@@ -108,24 +108,24 @@
 // buttons
 
 .btn-small {
-    background-color: #43AA8B;
+    background-color: $color-green;
     padding: .7rem 1rem;
     border-radius: 2px;
 
     &:link,
     &:visited {
-        color: #fff;
+        color: $color-white;
         text-decoration: none;
     }
 
     &:hover {
-        background-color: #2B6D59;
+        background-color: $color-green-dark;
         border-bottom: none;
     }
 }
 
 .btn-pink {
-    background-color: #EF3054;
+    background-color: $color-pink;
     padding: 1.5rem 1.8rem;
     border-radius: 3px;
     font-size: 1.5rem;
@@ -142,7 +142,7 @@
 
     &:link,
     &:visited {
-        color: #fff;
+        color: $color-white;
         text-decoration: none;
     }
 
@@ -252,14 +252,14 @@
         }
 
         &--info {
-            background-color: #fff;
+            background-color: $color-white;
             width: 40rem;
             margin: 0 4rem;
         }
 
         &--title {
             display: inline-block;
-            background-image: linear-gradient(rgba(43,109,89,.25), rgba(43,109,89,.25));
+            background-image: linear-gradient(rgba($color-green,.25), rgba($color-green,.25));
             margin: 3rem 2rem;
             padding: 2px 1rem;
         }
@@ -323,5 +323,111 @@
 
 .carousel-indicators li {
     background-color: #999 !important;
-    background-color: rgba(43,109,89,1) !important;
-  }
+    background-color: rgba($color-green,1) !important;
+}
+
+//////////////////////////////////////////////
+// pricing
+.pricing {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+    
+    &__card {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 35rem;
+        height: 50rem;
+        box-shadow: 1px 1px 16px -5px rgba(0,0,0,0.75);
+
+        > * {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            flex: 1;
+        }
+
+        &-top {
+            justify-content: center;
+            background-color: $color-brown;
+            color: $color-white;
+            border-top: 1rem solid $color-green;
+        }
+
+        &-bottom {
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        &--price {
+            font-size: 8rem;
+
+            &-span {
+                font-size: 2rem;
+            }
+        }
+
+        &--plan {
+            font-size: 3rem;
+        }
+
+        &--details {
+            font-size: 3rem;
+            font-style: italic;
+        }
+
+        &--btn {
+            font-size: 1.5rem;
+            width: 50%;
+        }
+    }
+
+    &__card:not(:last-child) {
+        margin-right: 5rem;
+    }
+}
+
+//////////////////////////////////////////////
+// footer 
+.footer {
+    background-color: $color-brown;
+    color: $color-white;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    font-size: 1.2rem;
+
+    * {
+        padding-right: .5rem;
+    }
+
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+        fill: $color-white;
+
+        &:hover {
+            fill: $color-pink;
+        }
+    }
+
+    &__links {
+        display: flex;
+    }
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: $color-pink;
+}
+
+.footer p {
+    margin-bottom: 0;
+}

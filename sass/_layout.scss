@@ -7,14 +7,19 @@ header {
 
 .section-works {
     min-height: 50rem;
-    background-color: #fff;
+    background-color: $color-white
 }
 
 .section-box {
-    background-color: #EAEAEA;
+    background-color: $color-background;
     padding-bottom: 5rem;
 }
 
 .section-menu {
-    height: 94vh;
+    min-height: 94vh;
+}
+
+.section-pricing {
+    background-color: $color-background;
+    height: 88vh;
 }
