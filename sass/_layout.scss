@@ -5,6 +5,20 @@ header {
     background-attachment: fixed;
 }
 
+header a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.anchor {
+    padding-top: 6vh;
+}
+
 .section-works {
     min-height: 50rem;
     background-color: $color-white

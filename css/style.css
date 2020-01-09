@@ -9,7 +9,8 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -23,6 +24,16 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/header.jpg);
   background-size: cover;
   background-attachment: fixed; }
+
+header a {
+  text-decoration: none;
+  color: inherit; }
+  header a:hover {
+    text-decoration: none;
+    color: inherit; }
+
+.anchor {
+  padding-top: 6vh; }
 
 .section-works {
   min-height: 50rem;
@@ -123,6 +134,8 @@ header {
   .btn-small:hover {
     background-color: #2B6D59;
     border-bottom: none; }
+    .btn-small:hover:active {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
 
 .btn-pink {
   background-color: #EF3054;
@@ -184,7 +197,10 @@ header {
       height: 20rem;
       position: relative;
       overflow: hidden;
-      border-radius: 50%; }
+      border-radius: 50%;
+      transition: all .2s; }
+      .works__step--figure:hover {
+        transform: scale(1.1); }
     .works__step--img {
       display: inline-block;
       height: 100%;
@@ -202,7 +218,10 @@ header {
       width: 20rem;
       height: 20rem;
       overflow: hidden;
-      position: relative; }
+      position: relative;
+      transition: transform .1s; }
+      .box__items--figure:hover {
+        transform: scale(1.1); }
     .box__items--item {
       display: flex;
       padding-bottom: 4rem; }
@@ -270,7 +289,10 @@ header {
     text-align: center;
     width: 35rem;
     height: 50rem;
-    box-shadow: 1px 1px 16px -5px rgba(0, 0, 0, 0.75); }
+    box-shadow: 1px 1px 16px -5px rgba(0, 0, 0, 0.75);
+    transition: transform .1s; }
+    .pricing__card:hover {
+      transform: scale(1.1); }
     .pricing__card > * {
       display: flex;
       flex-direction: column;
@@ -296,6 +318,9 @@ header {
     .pricing__card--btn {
       font-size: 1.5rem;
       width: 50%; }
+      .pricing__card--btn:active {
+        transform: translateY(0.5rem);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
   .pricing__card:not(:last-child) {
     margin-right: 5rem; }
 
