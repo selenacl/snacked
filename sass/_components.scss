@@ -270,6 +270,10 @@
             background-color: $color-white;
             width: 40rem;
             margin: 0 4rem;
+
+            &-right {
+                margin: 0 0rem 0 4rem;
+            }
         }
 
         &--title {
@@ -346,7 +350,7 @@
 .pricing {
     display: flex;
     justify-content: center;
-    margin-top: 8rem;
+    margin-top: 3rem;
     
     &__card {
         display: flex;
@@ -402,7 +406,7 @@
             width: 50%;
 
             &:active {
-                transform: translateY(.5rem);
+                transform: translateY(2px);
                 box-shadow: 0 .5rem 1rem rgba(black, 0.15);
             }
         }
