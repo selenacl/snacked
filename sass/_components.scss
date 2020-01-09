@@ -121,6 +121,10 @@
     &:hover {
         background-color: $color-green-dark;
         border-bottom: none;
+
+        &:active {
+            box-shadow: 0 .5rem 1rem rgba(black, 0.15);
+        }
     }
 }
 
@@ -198,6 +202,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        
 
         &--figure {
             width: 20rem;
@@ -205,6 +210,11 @@
             position: relative;
             overflow: hidden;
             border-radius: 50%;
+            transition: all .2s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
         }
 
         &--img {
@@ -237,6 +247,11 @@
             height: 20rem;
             overflow: hidden;
             position: relative;
+            transition: transform .1s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
         }
 
         &--item {
@@ -255,6 +270,10 @@
             background-color: $color-white;
             width: 40rem;
             margin: 0 4rem;
+
+            &-right {
+                margin: 0 0rem 0 4rem;
+            }
         }
 
         &--title {
@@ -331,7 +350,7 @@
 .pricing {
     display: flex;
     justify-content: center;
-    margin-top: 8rem;
+    margin-top: 3rem;
     
     &__card {
         display: flex;
@@ -340,6 +359,11 @@
         width: 35rem;
         height: 50rem;
         box-shadow: 1px 1px 16px -5px rgba(0,0,0,0.75);
+        transition: transform .1s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
 
         > * {
             display: flex;
@@ -380,6 +404,11 @@
         &--btn {
             font-size: 1.5rem;
             width: 50%;
+
+            &:active {
+                transform: translateY(2px);
+                box-shadow: 0 .5rem 1rem rgba(black, 0.15);
+            }
         }
     }
 
